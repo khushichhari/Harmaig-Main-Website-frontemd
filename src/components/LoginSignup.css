@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.login-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  .login-signup-form {
+    width: 350px; /* Fixed width for the form */
+    padding: 20px; /* Padding around the form */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background for form */
+  }
+  
+  h2 {
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  input {
+    height:45px;
+    width:310px;
+    margin-bottom: 20px; /* Space below input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  input:focus {
+    border-color: black; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button[type="submit"] {
+    width: 100%; /* Full width for the submit button */
+    height: 45px; /* Increased height for better usability */
+    background-color: black; /* Primary color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(183, 181, 181);; /* Darker shade on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-button {
+    width: 100%; /* Full width for Google button */
+    height: 45px; /* Increased height for better usability */
+    background-color:black; /* White background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    padding: 0; /* No extra padding */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Space above */
+    color: white; /* Text color */
+  }
+  
+  .google-button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(183, 181, 181);;
+  }
+  
+  .google-button img {
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  p {
+    margin-top: 20px; /* Space above paragraph */
+    font-size: 14px; /* Font size */
+    color: black; /* Text color */
+    text-align: center; /* Center align text */
+  }
+  
+  span {
+    color: #337ab7; /* Color for clickable span */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .toggle-buttons {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between buttons */
+    margin-bottom: 20px; /* Space below toggle buttons */
+  }
+  
+  .toggle-buttons button {
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 5px; /* Margin for spacing */
+    padding: 10px; /* Padding inside buttons */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    background-color: black; /* Default background color */
+    color: white; /* Default text color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .toggle-buttons button:hover {
+    background-color: rgb(183, 181, 181); /* Darker shade on hover */
+  }
+  
+  .toggle-buttons button.active {
+    background-color: white; /* Active button color */
+    color: black; /* Active text color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for active state */
+  }
+  
+  
+  
+  
+  

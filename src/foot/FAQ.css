@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container1 {
+    max-width: 1300px;
+    height: 100vh;
+    background-color: #dac8c8;
+    margin-left: 105px;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin: 0;
+    height: 100vh; /* Fixed height */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.faq h2 {
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.faqbox {
+    display: flex;
+    flex-direction: column; /* Stack question and answer vertically */
+    margin-top: 1rem;
+    background-color:white;
+    color: white;
+    border-radius: 5px; /* Add some border radius for aesthetics */
+    width: 900px;
+    margin-left: 200px;
+}
+
+.faq-question {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Center items vertically */
+    padding: 1.7rem;
+    cursor: pointer; 
+    line-height: 1.5; /* Consistent line height */
+}
+
+.faq-question:hover {
+    background-color: #e1f7fb;
+    transition: all ease-in-out 0.5s; 
+}
+
+.faq-answer {
+    padding: 1rem 1.7rem; /* Add some padding for the answer */
+    background-color: #e1f7fb; /* Different background for answer */
+}
+
+.faq-icon {
+    margin-left: auto; 
+    color: black;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container1 {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .faqbox {
+        width: 90%; /* Reduce width to fit smaller screens */
+        margin-left: 5%; /* Center the faqbox on mobile */
+    }
+
+    .faq h2 {
+        font-size: 28px; /* Adjust the font size for smaller screens */
+    }
+
+    .faq-question {
+        padding: 1.2rem; /* Slightly reduce padding for mobile */
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+
+    .faq-answer {
+        padding: 0.8rem 1.2rem; /* Adjust padding for the answer on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .faq h2 {
+        font-size: 24px;
+        margin-right: 20%; /* Further adjust heading size for very small screens */
+    }
+
+    .faqbox {
+        width: 70%; /* Make faqbox almost full width */
+        margin-left: 6.5%; /* Center it properly */
+    }
+
+    .faq-question {
+        padding: 1rem; /* Reduce padding for very small screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .faq-answer {
+        padding: 0.7rem 1rem; /* Reduce padding for the answer */
+    }
+}

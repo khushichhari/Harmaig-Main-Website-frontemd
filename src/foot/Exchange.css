@@ -1,0 +1,110 @@
+.exchange-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  max-width: 1300px;
+  margin: 20px auto; /* Center the container horizontally */
+  font-family: 'Arial', sans-serif;
+  border: 1px solid gray;
+  border-radius: 3rem;
+  background-color: #dac8c8;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox: thinner scrollbar */
+  scrollbar-color: #888 #e4e4e4; /* Firefox: scrollbar color */
+}
+
+/* Heading Styling */
+.exchange-container h1 {
+  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.exchange-container h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.exchange-container p,
+.exchange-container ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.exchange-container ul {
+  padding-left: 20px;
+}
+
+/* Icon Styling */
+.fa-arrow-left {
+  font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .exchange-container {
+    padding: 3rem;
+    max-width: 90%; /* Decrease width on medium screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .exchange-container h1 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+  
+  .exchange-container h2 {
+    font-size: 1.5rem; /* Reduce subheading size */
+  }
+  
+  .exchange-container p, 
+  .exchange-container ul {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
+
+@media (max-width: 768px) {
+  .exchange-container {
+    padding: 2rem;
+    max-width: 95%; /* Further reduce width for tablet screens */
+    max-height: auto; /* Allow content to extend vertically if necessary */
+  }
+
+  .exchange-container h1 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .exchange-container h2 {
+    font-size: 1.3rem; /* Further reduce subheading size */
+  }
+
+  .exchange-container p, 
+  .exchange-container ul {
+    font-size: 0.9rem; /* Further reduce paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  .exchange-container {
+    padding: 1rem;
+    max-width: 100%; /* Full width on mobile devices */
+  }
+
+  .exchange-container h1 {
+    font-size: 1.5rem; /* Reduce heading size for mobile */
+  }
+
+  .exchange-container h2 {
+    font-size: 1.2rem; /* Reduce subheading size for mobile */
+  }
+
+  .exchange-container p, 
+  .exchange-container ul {
+    font-size: 0.85rem; /* Smaller text for mobile */
+  }
+}

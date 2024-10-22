@@ -1,0 +1,96 @@
+.returns-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border : 1px solid gray;
+    border-radius: 3rem;
+    align-items: center; /* Centers content horizontally */
+    text-align: left; /* Centers text inside the div */
+    max-height:700px;
+    max-width: 1300px; /* Optional: max width for better layout */
+    margin-top: 2rem;
+    padding:4rem;
+    margin-left: 115px;
+    margin-bottom: 20px; /* Centers the container in the middle of the page */
+    font-family: 'Arial', sans-serif; /* Optional: font styling */
+    background-color: #dac8c8;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Firefox: thinner scrollbar */
+    scrollbar-color: #888 #e4e4e4; /* Firefox: color the scrollbar */
+  }
+  
+  .returns-container h1 {
+    margin-top: 400px;
+    font-size: 3rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  .returns-container h2 {
+    font-size: 2rem; /* Subheading size */
+    margin-top: 20px; /* Space above subheading */
+    margin-bottom: 10px; /* Space below subheading */
+  }
+  
+  .returns-container p, 
+  .returns-container ol {
+    font-size: 1.2rem; /* Adjust paragraph size */
+    line-height: 1.6; /* Better readability */
+    color: #333; /* Text color */
+  }
+  
+  .returns-container ol {
+    padding-left: 20px; /* Padding for the ordered list */
+  }
+  
+  .returns-container ul {
+    padding-left: 20px; /* Padding for nested unordered list */
+  }
+  
+
+  .returns-container i{
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .returns-container {
+      max-width: 100%; /* Full width on smaller screens */
+      margin-left: 0; /* Remove left margin */
+      padding: 2rem; /* Reduce padding for better fit */
+  }
+
+  .returns-container h1 {
+      margin-top: 100px; /* Adjust heading margin for smaller screens */
+      font-size: 2.5rem; /* Adjust heading size for smaller screens */
+      margin-bottom: 15px; /* Adjust space below heading */
+  }
+
+  .returns-container h2 {
+      font-size: 1.5rem; /* Adjust subheading size for smaller screens */
+  }
+
+  .returns-container p, 
+  .returns-container ol {
+      font-size: 1rem; /* Adjust paragraph size for better readability */
+  }
+
+  .returns-container i {
+      font-size: 1.2rem; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .returns-container h1 {
+      font-size: 2rem; /* Further reduce heading size for very small screens */
+  }
+
+  .returns-container h2 {
+      font-size: 1.2rem; /* Further reduce subheading size */
+  }
+
+  .returns-container p, 
+  .returns-container ol {
+      font-size: 0.9rem; /* Further reduce paragraph size for mobile */
+  }
+}

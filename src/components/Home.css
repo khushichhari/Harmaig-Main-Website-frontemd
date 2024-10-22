@@ -1,0 +1,590 @@
+/* Default Styles (for larger screens) */
+.navbar-brand {
+  margin-left: 20px;
+  font-size: 24px;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.custom-navbar {
+  background-color: #f5dddd;
+}
+.brand-logo {
+  width: 500px;
+  height: 500px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 1;
+  max-width: 700px; /* Adjust width as needed */
+  margin: 0 auto; /* Center align */
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+}
+
+#s-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px; /* Space around the icon */
+}
+
+#s-icon i {
+  font-size: 20px;
+  color: #000;
+}
+
+#s-icon:hover i {
+  color: #aaa; /* Change icon color on hover */
+}
+
+/* Right-side Icons */
+.custom-icons .nav-link {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.custom-icons .nav-link i:hover {
+  color: white;
+}
+
+/* Badge Styling */
+.navbar .badge {
+  font-size: 12px;
+ 
+}
+
+/* Bottom Navigation Links */
+.bottom-nav {
+  background-color: #dac8c8;
+  padding: 10px 0;
+}
+
+.bottom-nav .nav-link {
+  padding: 0 15px;
+  color: #dfd5d5;
+  font-weight: 500;
+}
+
+.bottom-nav .nav-link:hover {
+  color: white;
+}
+
+/* Optional styling for carousel */
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-indicators button {
+  background-color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.bottom-nav .nav-link {
+  color: #333;
+  font-weight: bold;
+}
+
+.bottom-nav .nav-link:hover {
+  color: white;
+}
+
+/* Box for Category Section */
+#box {
+  margin: 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Centers cards with space around */
+}
+.card {
+  margin: 10px;
+  box-sizing: border-box;
+  flex: 0 1 calc(20% - 20px); /* Adjusted to fit 5 cards in one row */
+  max-width: calc(20% - 20px); /* Ensures cards do not exceed 20% width */
+}
+
+.card img {
+  height: 200px; /* Consistent height for images */
+  width: 200px;
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-left: 50px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(183, 181, 181);
+}
+
+/* Shop by Emotion Section */
+#shop-by-emotion {
+  text-align: center;
+}
+
+#shop-by-emotion h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 400px;
+}
+
+#img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emotion-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emotion-button .btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black; /* Primary button color */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emotion-button .btn:hover {
+  background-color: rgb(183, 181, 181); /* Darker color on hover */
+}
+
+.bottom-nav {
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: block; /* Always show the dropdown when visible */
+  position: absolute;
+  left: 19%;
+  top: 100%; /* Position below the nav item */
+  width: 63%; /* Set the desired width */
+  height: 550px;
+  background-color: white; /* Background color */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  z-index: 1000; /* Ensure dropdown is on top */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; /* Show the dropdown on hover */
+}
+
+.dropdown-item {
+  padding: 10px 15px; /* Add padding for dropdown items */
+  color: black; /* Text color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure items take up full width */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Change background on hover */
+}
+
+#rec {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+
+/* cart*/
+
+/* Cart */
+.cart-container {
+  padding: 3rem;
+  background-color: white;
+  min-height: 100vh; /* Adjust height to be flexible */
+}
+
+.cart-container h1 {
+  text-align: center;
+  font-size: 2rem; /* Adjust for better scaling */
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto; /* Ensure table scrolls horizontally if needed */
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem; /* Adjust for readability on smaller screens */
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 1rem; /* Adjust button size */
+}
+
+.place-order-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 1rem;
+}
+
+.place-order-btn:hover {
+  background-color: rgb(183, 181, 181);
+}
+
+.cart-summary {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cart-container p {
+  text-align: center;
+  font-size: 1.5rem; /* Adjust font size for better scaling */
+  margin-top: 30px;
+}
+
+.cart-container img {
+  display: block;
+  margin: 0 auto; /* Center image */
+  max-width: 100%; /* Ensure image scales with container */
+}
+
+/* blog */
+
+/* src/components/Home.css */
+.blog-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-page h1{
+  text-align: center;
+
+}
+
+.blog-list {
+  margin-top: 20px;
+}
+
+.blog-post {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.blog-post p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.blog-post em {
+  font-size: 14px;
+  color: #888;
+}
+
+
+/* Jewellery Guide */
+
+
+.guide-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.find-size-button {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.find-size-button:hover {
+  background-color: rgb(183, 181, 181);
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .cart-container {
+    padding: 2rem; /* Adjust padding on medium screens */
+  }
+
+  .cart-container h1 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .cart-container p {
+    font-size: 1.4rem; /* Adjust paragraph font size */
+  }
+
+  .place-order-btn {
+    width: 130px;
+    padding: 8px; /* Adjust button size */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 1.5rem;
+  }
+
+  .cart-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    font-size: 0.9rem; /* Adjust table text size for tablets */
+    padding: 6px;
+  }
+
+  .place-order-btn {
+    width: 120px;
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 0.85rem;
+  }
+
+  .cart-container p {
+    font-size: 1.3rem;
+  }
+
+  .find-size-button {
+    padding: 12px;
+    font-size: 14px;
+    width: 85%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 1rem;
+  }
+
+  .cart-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    font-size: 0.8rem; /* Smaller font size for mobile */
+    padding: 5px;
+  }
+
+  .place-order-btn {
+    width: 100px;
+    font-size: 0.75rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+
+  .cart-container p {
+    font-size: 1rem;
+  }
+
+  .find-size-button {
+    padding: 10px;
+    font-size: 12px;
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .guide-container {
+    padding: 10px;
+  }
+}
+
+#btn1 {
+  margin-left: 600px;
+  background-color: black;
+  border-radius: 20px;
+  width: 200px;
+  color: white;
+  padding: 10px;
+}
+
+#line {
+  margin-left: 620px;
+}
+
+#heading {
+  text-align: center;
+}
+
+/* Responsive design */
+
+
+/* nav links icon horizontal */
+@media (max-width: 768px) { /* Tablet and below */
+  .custom-icons {
+    justify-content: space-between;
+    margin-left: 115px; /* Adjust spacing for tablet view */
+  }
+
+  .custom-icons .nav-link {
+    margin-right: 15px; /* Reduce margin for smaller screens */
+  
+  }
+  .nav-link:hover{
+    color: white;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  .custom-icons {
+    flex-direction: row; /* Ensure items are in a single row */
+    justify-content: center; /* Center items on mobile */
+  }
+
+  .custom-icons .nav-link {
+    margin-right: 10px; /* Further reduce margin for mobile */
+  }
+}
+
+/* cards  shop  by category */
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) { /* Large screens */
+  .card {
+    flex: 0 1 calc(33.33% - 20px); /* 3 cards in one row */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) { /* Tablets */
+  .card {
+    flex: 0 1 calc(50% - 20px); /* 2 cards in one row */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  .card {
+    flex: 0 1 100%; /* 1 card in one row */
+    max-width: 100%; /* Ensure full width */
+  }
+
+  .card img {
+    margin-left: 0; /* Remove margin on mobile */
+  }
+}
+
+
+/* line for separation */
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #line {
+    margin-left: 30px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  #line {
+    width: 95%; /* Increase width on mobile screens */
+    margin-left: auto; /* Center the line */
+    
+  }
+}
+
+/* Drop down */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    width: 100%; /* Full width on smaller screens */
+    left: 0; /* Align to the left */
+    top: 0; /* Optional: adjust position as needed */
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover for touch devices */
+  }
+}

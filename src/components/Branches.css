@@ -1,0 +1,94 @@
+.branches-container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.map-container {
+  position: relative;
+  display: inline-block; /* Ensures that the map container stays centered */
+  width: 100%; /* Full width of the container for responsiveness */
+}
+
+.map-image {
+  width: 40%;
+  height: auto;
+  max-width: 100%; /* Ensure the image scales with the container */
+  border-radius: 10px; /* Optional: rounded edges */
+}
+
+.branches-list {
+  position: absolute;
+  top: 20px; /* Adjust for smaller screens in media query */
+  left: 20px;
+  z-index: 10; /* Keep branches above the map */
+  color: white;
+  width: 90%; /* Ensure branches fit within smaller screens */
+  text-align: left;
+}
+
+.branch {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem; /* Base font size */
+}
+.branch h3{
+  color: white;
+
+}
+
+.branch p{
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .map-image {
+      width: 60%; /* Increase image size on medium screens */
+  }
+
+  .branches-list {
+      top: 15px; /* Adjust position for medium screens */
+      left: 15px;
+      width: 80%; /* Adjust the width of the branches list */
+  }
+
+  .branch {
+      font-size: 0.9rem; /* Slightly reduce text size */
+  }
+}
+
+@media (max-width: 768px) {
+  .map-image {
+      width: 80%; /* Expand image size on smaller screens */
+  }
+
+  .branches-list {
+      top: 10px; /* Adjust position for smaller screens */
+      left: 10px;
+      width: 100%; /* Full width on smaller screens */
+  }
+
+  .branch {
+      font-size: 0.85rem; /* Further reduce text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .map-image {
+      width: 100%; /* Full width for mobile screens */
+  }
+
+  .branches-list {
+      top: 5px; /* Adjust further for mobile */
+      left: 5px;
+      width: 100%; /* Ensure full width on mobile */
+  }
+
+  .branch {
+      font-size: 0.8rem; /* Smaller font for mobile */
+      margin: 5px; /* Reduce margin for mobile */
+  }
+}

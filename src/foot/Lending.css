@@ -1,0 +1,71 @@
+.lending-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+    text-align: left; /* Centers text inside the div */
+    padding: 20px;
+    max-width: 800px; /* Optional: max width for better layout */
+    margin-top: 20px;
+    margin-left: 365px;
+    margin-bottom: 20px;/* Centers the container in the middle of the page */
+    border : 1px solid gray;
+    border-radius: 3rem;
+    font-family: 'Arial', sans-serif; /* Optional: font styling */
+    background-color: #dac8c8;
+  }
+  
+  .lending-container h1 {
+    margin-top: 30px;
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  .lending-container ul {
+    font-size: 1.2rem; /* Adjust list size */
+    line-height: 1.6; /* Better readability */
+    color: #333; /* Text color */
+    padding-left: 20px; /* Padding for the unordered list */
+  }
+  
+
+  .fa-arrow-left{
+    font-size: 1.5rem;
+  }
+
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .lending-container {
+      max-width: 100%; /* Full width on smaller screens */
+      margin-left: 0; /* Remove left margin */
+      padding: 10px; /* Reduce padding for better fit */
+  }
+
+  .lending-container h1 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+      margin-bottom: 15px; /* Adjust space below heading */
+  }
+
+  .lending-container ul {
+      font-size: 1rem; /* Adjust list size for better readability */
+  }
+
+  .fa-arrow-left {
+      font-size: 1.2rem; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .lending-container h1 {
+      font-size: 1.8rem; /* Further reduce heading size for very small screens */
+  }
+
+  .lending-container ul {
+      font-size: 0.9rem; /* Further reduce list size for mobile */
+  }
+
+  .fa-arrow-left {
+      font-size: 1rem; /* Further adjust icon size for mobile */
+  }
+}

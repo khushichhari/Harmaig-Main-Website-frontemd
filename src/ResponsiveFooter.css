@@ -1,0 +1,115 @@
+/* General Footer Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    padding: 40px 0;
+    color: #333;
+    background-color: rgb(230, 224, 216); /* Background color for the entire footer */
+  }
+  
+  .footer-container {
+    padding: 2rem;
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(4, 1fr,1fr); /* Create two equal columns */
+    gap: 20px; /* Space between columns */
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    background-color: white; /* Background color for each footer section */
+    padding: 1rem; /* Add padding inside sections */
+    border-radius: 8px; /* Optional: add border radius for aesthetics */
+  }
+  
+  .footer-section h4 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+    color: rgb(183, 181, 181);
+  }
+  
+  /* Bottom Bar */
+  .footer-bottom {
+    text-align: center;
+    background-color: white; /* Bottom bar background color */
+    padding: 10px 0;
+    margin-top: 20px;
+    grid-column: 1 / -1; /* Make the bottom bar span across both columns */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #f0c040; /* Optional: highlight on hover */
+  }
+  
+  /* Responsive Styles for Footer */
+  @media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack sections vertically on small screens */
+        align-items: center; /* Center items in the grid layout */
+    }
+  
+    .footer-section {
+        margin: 10px 0; /* Add vertical margin for spacing */
+    }
+  }
+  
+  @media (min-width: 769px) {
+      .footer-container {
+          grid-template-columns: repeat(2, 1fr); /* Maintain two columns layout */
+          gap: 30px; /* Increase space between columns */
+      }
+  
+      .footer-section {
+          padding: 2rem; /* Increase padding for better spacing on larger screens */
+          max-width: calc(50% - 20px); /* Ensure sections stay responsive */
+      }
+  
+      .footer-section h4 {
+          font-size: 2.5rem; /* Increase heading size for better visibility */
+      }
+  
+      .footer-section ul li a {
+          font-size: 1.5rem; /* Larger font size for links */
+      }
+  
+      .footer-bottom p {
+          font-size: 1.2rem; /* Slightly larger font for bottom bar text */
+      }
+  }
+  

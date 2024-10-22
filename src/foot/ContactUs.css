@@ -1,0 +1,63 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid gray;
+  border-radius: 3rem;
+  background-color: #dac8c8;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #e4e4e4;
+}
+
+/* Individual contact person box */
+.contact-person {
+  flex-basis: 30%; /* Takes 30% width on larger screens */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading Styling */
+.contact-container h1, .contact-container h2 {
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .contact-person {
+    flex-basis: 45%; /* Two contact-person boxes in a row for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-person {
+    flex-basis: 100%; /* One contact-person box per row for smaller screens */
+  }
+
+  .contact-container {
+    padding: 2rem; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1rem; /* Further reduce padding for mobile */
+  }
+
+  .contact-person {
+    flex-basis: 100%; /* Stays one per row on mobile */
+    padding: 8px;
+  }
+}
